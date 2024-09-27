@@ -14,7 +14,7 @@ const con = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "",
-    database: "Registration Details" 
+    database: "Registration Details"
 });
 
 con.connect(function(err) {
@@ -42,7 +42,7 @@ app.post('/register', (req, res) => {
     }
 
     const sql = "INSERT INTO Registration_Table (Name, Gender, Email, Date_of_birth, Password, Weight, Height) VALUES (?, ?, ?, ?, ?, ?, ?)";
-    const values = [name, gender, email, dob, password, weight, height];  
+    const values = [name, gender, email, dob, password, weight, height];
 
     con.query(sql, values, (err, result) => {
         if (err) {
