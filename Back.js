@@ -7,7 +7,15 @@ const app = express();
 const PORT = process.env.PORT || 5001;
 
 app.use(bodyParser.json());
-app.use(cors());
+
+// CORS configuration
+const corsOptions = {
+    origin: 'https://tac-qjn2.onrender.com', // Allow this origin
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true, // Allow credentials (e.g., cookies, authorization headers)
+    optionsSuccessStatus: 204 // For legacy browser support
+};
+app.use(cors(corsOptions));
 
 // MySQL connection
 const con = mysql.createConnection({
