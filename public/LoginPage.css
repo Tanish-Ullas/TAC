@@ -1,0 +1,158 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("LoginPage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.header-text {
+    display: flex;
+    font-family: "Baskervville SC", serif;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 65px;
+    color: black;
+    margin-top: 105px;
+    text-align: center;
+}
+
+a{
+  color: black;
+}
+
+a:hover{
+    color:grey;
+}
+
+.text{
+    list-style: none;
+    display: inline-block;
+    justify-content: center;
+    font-family: "Baskervville SC", serif;
+    align-items: flex-start;
+    font-size: 25px;
+    color: black;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.options {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    padding: 5px 30px;
+    font-size: 25px;
+    border: none; 
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.options button {
+    margin-left: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.options button:hover{
+    opacity:0.8;
+}
+
+.google, .facebook, .x {
+    width: 100px;
+    height: 60px;
+}
+
+.or{
+    font-size: 25px;
+    margin-top: -10px;
+}
+
+.login{
+    margin-top: -20px;
+    padding: 20px;
+    font-size: 20px;
+    font-family: "Baskervville SC", serif;
+}
+
+.login input{
+    width: 500px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    background-color: rgba(53, 50, 50, 0.258);
+    border-color: rgba(53, 50, 50, 0.258);
+}
+
+.login input::-webkit-input-placeholder {
+    color:white;
+    padding-left: 10px;
+    border-color: white;
+}
+
+.start-button {
+    display: flex;
+    align-items: center;
+    padding: 5px 60px 5px 90px;
+    font-size: 35px;
+    background-color: white;
+    font-family: "Baskervville SC", serif;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    margin-left: 110px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+.start-button:hover{
+  color: grey;
+}
+  
+.button-icon {
+    width: 40px;
+    height: 25px;
+    margin-left: 10px;
+}
+ 
+.last {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.check-container {
+    display: flex;
+    align-items:left;
+}
+
+.check {
+    margin-right: 5px; 
+}
+
+.check + label {
+    margin-left: 5px; 
+}
+
+.check-container + a {
+    margin-left: 155px; 
+}
+
+.end{
+    margin-top: 105px;
+}

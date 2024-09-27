@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="LoginPage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+    <script src="LoginFront.js"></script>
+</head>
+<body>
+    <div class="header-text">
+        Welcome Back!
+    </div>
+    <div class="text">
+        Don’t have an account yet? <a href="RegistrationPage.html">Sign-Up</a>
+    </div>
+    <div class="options">
+        <a href="https://accounts.google.com"><button><img src="google.png" alt="Google" class="google"></button></a>
+        <a href="https://www.facebook.com/login/"><button><img src="facebook.png" alt="Facebook" class="facebook"></button></a>
+        <a href="https://twitter.com/i/flow/login"><button><img src="X.png" alt="X (Twitter)" class="x"></button></a>
+    </div>
+    <div class="or">OR</div>
+    <form id="loginForm" class="login" onsubmit="submitLogin(event)">
+        EMAIL<br>
+        <input type="email" id="email" name="email" size="25" maxlength="50" placeholder="Enter Email" required><br>
+        PASSWORD<br>
+        <input type="password" id="password" name="password" size="25" maxlength="20" placeholder="Enter Password" required><br>
+        <div class="button-container">
+            <button type="submit" class="start-button">Login
+                <img src="Button.png" alt="Icon" class="button-icon">
+            </button>
+        </div>
+    </form>
+
+    <div class="last">
+        <div class="check-container">
+            <input type="checkbox" id="keepLoggedIn" checked class="check">
+            <label for="keepLoggedIn">Keep me logged in</label>
+        </div>
+        <a href="#">Forgot Password?</a>
+    </div>
+    
+    <div class="end">
+        © 2024 The Addiction Centre, Inc.
+    </div>
+</body>
+</html>

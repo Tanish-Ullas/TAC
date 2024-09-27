@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="RegistrationPage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+    <script defer src="RegistrationFront.js"></script>
+</head>
+<body>
+    <div class="header-text">Create an account</div>
+    <div class="text">
+        Already have an account yet? <a href="LoginPage.html">Login</a>
+    </div>
+    <form id="registrationForm">
+        <div class="Reg">
+            <div class="left">
+                NAME<br>
+                <input type="text" id="name" size="15" maxlength="25" placeholder="Enter Name" required><br>
+                EMAIL<br>
+                <input type="email" id="email" size="15" maxlength="50" placeholder="Enter Email" required><br>
+                PASSWORD<br>
+                <input type="password" id="password" size="15" maxlength="50" placeholder="Enter Password" required><br>
+                WEIGHT<br>
+                <input type="text" id="weight" size="15" maxlength="50" placeholder="Enter Weight" required>
+                <select id="weightUnit">
+                    <option value="Kg">Kg</option>
+                    <option value="Lbs">Lbs</option>
+                </select>
+            </div>
+            <div class="right">
+                GENDER<br>
+                <div class="radio-group">
+                    <label class="custom-radio">
+                        <input type="radio" name="gender" value="Male" required>
+                        <span class="radio-btn"></span>
+                        Male
+                    </label>
+                    <label class="custom-radio">
+                        <input type="radio" name="gender" value="Female">
+                        <span class="radio-btn"></span>
+                        Female
+                    </label>
+                    <label class="custom-radio">
+                        <input type="radio" name="gender" value="Others">
+                        <span class="radio-btn"></span>
+                        Others
+                    </label>
+                </div>
+                DATE OF BIRTH<br>
+                <input type="date" id="dob" size="15" required class="date-picker"><br>
+                CONFIRM PASSWORD<br>
+                <input type="password" id="confirmPassword" size="15" placeholder="Confirm Password" required><br>
+                HEIGHT<br>
+                <input type="text" id="height" size="15" maxlength="5" placeholder="Enter Height" required>
+                <select id="heightUnit">
+                    <option value="Cm">Cm</option>
+                    <option value="Feet">Feet</option>
+                </select>
+            </div>
+        </div>
+        <div class="terms">
+            <input type="checkbox" id="terms" required>
+            <label for="terms">I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></label>
+        </div>
+        <div class="button-container">
+            <button type="submit" class="start-button">
+                Sign-Up
+                <img src="Button.png" alt="Icon" class="button-icon">
+            </button>
+        </div>
+    </form>
+    <div class="end">© 2024 The Addiction Centre, Inc.</div>
+</body>
+</html>

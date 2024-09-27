@@ -1,0 +1,241 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("RegistrationPage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden; 
+}
+
+.header-text {
+  font-size: 70px;
+  color: black;
+  font-family: "Baskervville SC", serif;
+  margin-top: 5px;
+  margin-left: -295px;
+  text-align: left;
+}
+
+a{
+  color: black;
+}
+
+a:hover{
+    color:grey;
+}
+
+.text{
+  list-style: none;
+  display: inline-block;
+  justify-content: center;
+  font-family: "Baskervville SC", serif;
+  align-items: flex-start;
+  font-size: 25px;
+  color: black;
+  margin-top: 5px;
+  margin-left: -285px;
+  text-align: center;
+}
+
+.line1{
+  display: inline-block;
+  margin-top: 50px;
+  font-size: 30px;
+  padding: 0px 200px;
+  margin-left: -200px;
+}
+
+.left{
+  margin-top: 60px;
+  margin-left: -450px;
+  font-family: "Baskervville SC", serif;
+  margin-bottom: 200px;
+  font-size: 25px;
+}
+
+.left input{
+  width: 370px;
+  height: 45px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 17px;
+  background-color: rgba(53, 50, 50, 0.258);
+  border-color: white;
+}
+
+.left input::-webkit-input-placeholder {
+  color:white;
+  border-color: white;
+}
+
+.weight input {
+  flex: 1;
+  width:255px; 
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.right{
+  margin-top: 60px;
+  margin-left: 15px;
+  font-family: "Baskervville SC", serif;
+  margin-bottom: 200px;
+  font-size: 25px;
+}
+
+.right input{
+  width: 370px;
+  height: 45px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 17px;
+  background-color: rgba(53, 50, 50, 0.258);
+  border-color: white;
+}
+
+.right input::-webkit-input-placeholder {
+  color:white;
+  border-color: white;
+}
+
+.height {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.height input {
+  flex: 1;
+  width: auto; 
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+select {
+  font-size: 16px; 
+  height: 45px;
+  margin-left: 280px;
+  padding: 10px; 
+  border-radius: 5px; 
+  background-color: rgba(53, 50, 50, 0.258);
+  color: white;
+  width: 95px; 
+  border-color: white;
+}
+
+.Reg {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -80px;
+  margin-top: -10px;
+  padding: 0 1000px;
+}
+
+.terms {
+  margin-top: -165px;
+  margin-left: 600px; 
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: black; 
+}
+
+.start-button {
+  display: flex;                   
+  padding: 10px 40px;       
+  font-size: 20px;          
+  background-color: white; 
+  margin-left: -80px; 
+  color: black;           
+  border: none;            
+  border-radius: 5px;      
+  cursor: pointer;        
+  transition: background-color 0.3s; 
+}
+
+.button-container {
+  margin-top: 20px; 
+  margin-left:825px;
+  display: flex;
+}
+
+.start-button:hover{
+  color: grey;
+}
+
+.button-icon {
+  width: 40px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+  margin-top: 21px;
+  margin-bottom: 20px;
+}
+
+.custom-radio {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: #000;
+}
+
+.custom-radio input[type="radio"] {
+  display: none;
+}
+
+.custom-radio .radio-btn {
+  height: 20px;
+  width: 20px;
+  background-color: #d8c28b; 
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+}
+
+.custom-radio input[type="radio"]:checked + .radio-btn::before {
+  content: '';
+  height: 14px;
+  width: 14px;
+  background-color: #d8c28b;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-radio input[type="radio"]:checked + .radio-btn::after {
+  content: '';
+  height: 10px;
+  width: 10px;
+  background-color: #8d7745;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.date-picker{
+  color: white;
+  width: 65;
+}
+
+.end{
+  margin-top: 30px;
+}

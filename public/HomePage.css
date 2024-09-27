@@ -1,0 +1,211 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("HomePage.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.list-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 40px;
+  width: 80%;
+  max-width: 1700px;
+  margin-top: 35px;
+}
+
+.ul1{
+  flex: 1;
+  text-align: left;
+}
+ 
+.ul1 li{
+  display: inline-block;
+  font-size: 35px;
+  list-style: none;
+  margin-top: -20px;
+  margin-left: -70px;
+}
+
+.ul1 li a{
+  text-decoration: none;
+  color: #000;
+  padding: 0 60px;
+  position: relative;
+}
+
+.ul1 li a::after{
+  content: '';
+  width: 0;
+  height: 6px;
+  background: #dcbd10ae;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -30px;
+  transition: 0.5s;
+}
+  
+.ul1 li a:hover::after{
+  width: 60%;
+}
+
+.ul2{
+  flex: 1;
+  text-align: right;
+}
+   
+.ul2 li{
+  display: inline-block;
+  font-size: 35px;
+  list-style: none;
+  margin-top: -20px;
+  margin-right: -70px;
+}
+  
+.ul2 li a{
+  text-decoration: none;
+  color: #000;
+  padding: 0 60px;
+  position: relative;
+}
+  
+.ul2 li a::after{
+  content: '';
+  width: 0;
+  height: 6px;
+  background: #dcbd10ae;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -30px;
+  transition: 0.5s;
+}
+  
+.ul2 li a:hover::after{
+  width: 60%;
+}
+
+.element-group {
+  display: flex;
+  margin-left: 30px;
+}
+
+.element-group1 {
+  margin-right: 40px;
+  margin-left: -20px;
+}
+
+.element-group2 {
+  margin-left: 40px;
+  margin-right: -80px; 
+}
+
+.element-group1 span,
+.element-group2 span {
+  margin: 20px; 
+  font-size: 35px;
+  color: black;
+}
+
+
+.user-icon {
+  width: 50px; 
+  height: 50px; 
+  margin-left: 40px;
+  margin-top: -25px;
+}
+
+.header-text {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Baskervville SC", serif;
+  font-size: 40px;
+  color: black;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.name {
+  margin-top: -75px;
+  margin-left: -35px;
+  font-size: 80px;
+}
+
+.about-us {
+  margin-left: -200px;
+  margin-right: 50px;
+  margin-top: 5px;
+  font-size: 55px;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 80%;
+  max-width: 1200px;
+  margin: 10px;
+  margin-top: 15px;
+}
+
+.content {
+  flex: 1;
+  color: black;
+  font-size: 30px;
+  text-align: left;
+  margin-left: -50px;
+  margin-right: 100px;
+  margin-top: 10px;
+}
+
+.photo {
+  flex: 0 0 625px;
+  margin-right: -80px;
+  margin-top: -20px;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+}
+
+.button-container {
+  margin-top: -10px;
+}
+
+.start-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+  margin-left: -625px;
+  font-size: 25px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.start-button:hover{
+  color: grey;
+}
+
+.button-icon {
+  width: 40px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+.end{
+  margin-top: 50px;
+}
